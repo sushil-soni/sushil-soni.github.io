@@ -963,8 +963,8 @@
     margin-bottom: 16px;
   }
   .profile-pic-placeholder {
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background: linear-gradient(135deg, rgba(6,182,212,0.15), rgba(6,182,212,0.05));
     border: 3px solid var(--accent);
@@ -1075,7 +1075,7 @@
     <div class="hero-btns">
       <a href="#projects" class="btn-primary">View Projects <span class="arrow">→</span></a>
       <a href="#contact" class="btn-primary">✉️ Contact Me</a>
-      <a href="#" class="btn-primary">📄 Resume</a>
+      <a href="https://drive.google.com/file/d/1P9pZy_7hhqnGkHkj2jNkTf6Cx8JSUH3G/view?usp=sharing" target="_blank" class="btn-primary">📄 Resume</a>
     </div>
     <div class="scroll-hint">
       <div class="scroll-line"></div>
@@ -1085,10 +1085,8 @@
 
   <div class="hero-card">
     <div class="profile-pic-wrap">
-      <div class="profile-pic-placeholder" onclick="document.getElementById('profileInput').click()">
-        <span id="profileEmoji">👤</span>
-        <img id="profileImg" src="" alt="" style="display:none;" />
-        <label class="profile-upload-label">+ Add Photo</label>
+      <div class="profile-pic-placeholder">
+        <img id="profileImg" src="https://raw.githubusercontent.com/sushil-soni/sushil-soni.github.io/main/My%20Picture.png" alt="Sushil Soni" style="display:block; width:100%; height:100%; object-fit:cover; object-position: top center; border-radius:50%; position:absolute; inset:0;" />
         <input type="file" id="profileInput" accept="image/*" onchange="loadProfilePic(event)" />
       </div>
     </div>
@@ -1216,23 +1214,6 @@
 
     <div class="proj-card" data-cat="python">
       <div class="proj-meta"><span class="proj-num">PYTHON · 002</span><span class="proj-type">🐍</span></div>
-      <div class="proj-title">E-Commerce Sales Analysis</div>
-      <div class="proj-desc"><ul>
-        <li>Analyzed e-commerce data to identify revenue and customer trends.</li>
-        <li>Used Python for data cleaning, EDA and visualization.</li>
-        <li>Improved sales strategy efficiency by 15%.</li>
-      </ul></div>
-      <div class="proj-tags">
-        <span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span>
-      </div>
-      <div class="proj-links">
-        <a href="#" class="btn-demo">▶ Live Demo</a>
-        <a href="https://github.com/sushil-soni/Python-Project/tree/main/E-Commerce%20Sales%20Analysis" target="_blank" class="btn-code">🐙 View Code</a>
-      </div>
-    </div>
-
-    <div class="proj-card" data-cat="python">
-      <div class="proj-meta"><span class="proj-num">PYTHON · 003</span><span class="proj-type">🐍</span></div>
       <div class="proj-title">QR Code Generator</div>
       <div class="proj-desc"><ul>
         <li>Generate QR codes from text, URLs, or UPI IDs.</li>
@@ -1304,49 +1285,47 @@
 
     <div class="proj-card" data-cat="powerbi">
       <div class="proj-meta"><span class="proj-num">POWER BI · 001</span><span class="proj-type">📊</span></div>
-      <div class="proj-title">Sales Automation Dashboard</div>
+      <div class="proj-title">Blinkit Sales Dashboard</div>
       <div class="proj-desc"><ul>
-        <li>Automated data refresh and report generation workflows.</li>
-        <li>Saved ~5 hours/week in operational reporting.</li>
-        <li>Built interactive dashboards with drill-down capabilities.</li>
+        <li>Analyzed $1.20M total sales across 8,523 items with avg rating of 3.9.</li>
+        <li>Sales breakdown by item type — Household, Dairy, Snacks, Fruits & more.</li>
+        <li>Outlet-wise analysis by size (Small/Medium/High) and location (Tier 1/2/3).</li>
+        <li>Interactive filter panel by Outlet Location, Outlet Size & Item Type.</li>
       </ul></div>
       <div class="proj-tags">
-        <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Power Query</span>
+        <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Power Query</span><span class="tag">Data Visualization</span>
       </div>
       <div class="proj-links">
-        <a href="#" class="btn-demo">▶ Live Demo</a>
-        <a href="#" class="btn-code">🐙 View Code</a>
+        <a href="https://raw.githubusercontent.com/sushil-soni/PowerBI-Project/main/Screenshot%202026-07-02%20125559.png" target="_blank" class="btn-demo">📊 View Dashboard</a>
       </div>
     </div>
 
     <div class="proj-card" data-cat="excel">
       <div class="proj-meta"><span class="proj-num">EXCEL · 001</span><span class="proj-type">📗</span></div>
-      <div class="proj-title">Financial Budget Tracker</div>
+      <div class="proj-title">Superstore Sales Dashboard</div>
       <div class="proj-desc"><ul>
-        <li>Built a dynamic budget vs actual tracker using Pivot Tables.</li>
-        <li>Used conditional formatting to highlight variances automatically.</li>
-        <li>Created monthly summary charts for executive review.</li>
+        <li>Cleaned and analyzed Sample Superstore data (2014–2017) using Excel.</li>
+        <li>Built Pivot Tables for Sales by Category, Monthly Sales & Customer Count.</li>
+        <li>Top 5 profitable customers identified using Pie Chart visualization.</li>
+        <li>Interactive dashboard with Category & Year filters (Furniture, Office Supplies, Technology).</li>
       </ul></div>
       <div class="proj-tags">
-        <span class="tag">Excel</span><span class="tag">Pivot Tables</span><span class="tag">Charts</span>
+        <span class="tag">Excel</span><span class="tag">Pivot Tables</span><span class="tag">Dashboard</span><span class="tag">Data Cleaning</span><span class="tag">Charts</span>
       </div>
       <div class="proj-links">
-        <a href="#" class="btn-demo">▶ Live Demo</a>
-        <a href="#" class="btn-code">🐙 View Code</a>
+        <a href="https://1drv.ms/x/c/ECF9C89F5B1C0E62/IQQBgTmtgqUlRrAIMvCQ3X_DATJG_wZJx8BsOL5rAJmvNag?em=2&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True" target="_blank" class="btn-demo">📗 View Dashboard</a>
       </div>
     </div>
 
   </div>
 </section>
-
-<!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-label">03 — Work History</div>
   <h2 class="section-title">Experience</h2>
   <div class="exp-card">
     <div class="exp-top">
-      <div class="exp-role">Data Analyst — Intern</div>
-      <div class="exp-period">2024 – PRESENT</div>
+      <div class="exp-role">Data Analyst</div>
+      <div class="exp-period">JUNE 2024 – JULY 2026</div>
     </div>
     <div class="exp-company">📍 IITSCL · Indian Institute of Training for Software & Computing Lab · New Delhi</div>
     <ul class="exp-bullets">
@@ -1380,27 +1359,9 @@
     <div class="cert-card">
       <div class="cert-icon">🏆</div>
       <div class="cert-body">
-        <div class="cert-name">Data Analytics Certification</div>
-        <div class="cert-org">Issuing Organisation · Year</div>
-        <a href="#" class="cert-link">View Certificate →</a>
-      </div>
-    </div>
-
-    <div class="cert-card">
-      <div class="cert-icon">🏆</div>
-      <div class="cert-body">
-        <div class="cert-name">Certification 2</div>
-        <div class="cert-org">Issuing Organisation · Year</div>
-        <a href="#" class="cert-link">View Certificate →</a>
-      </div>
-    </div>
-
-    <div class="cert-card">
-      <div class="cert-icon">🏆</div>
-      <div class="cert-body">
-        <div class="cert-name">Certification 3</div>
-        <div class="cert-org">Issuing Organisation · Year</div>
-        <a href="#" class="cert-link">View Certificate →</a>
+        <div class="cert-name">English & Employability Skills</div>
+        <div class="cert-org">Freedom Employability Academy · 2025</div>
+        <a href="https://drive.google.com/file/d/1cl-M5kVftGhdFzQj5WZPfjVNyNGCJgtz/preview" target="_blank" class="cert-link">View Certificate →</a>
       </div>
     </div>
 
@@ -1496,7 +1457,7 @@
           <div class="c2-val">sushil-soni</div>
         </div>
       </a>
-      <a href="#" class="contact-card-v2">
+      <a href="https://drive.google.com/file/d/1P9pZy_7hhqnGkHkj2jNkTf6Cx8JSUH3G/view?usp=sharing" target="_blank" class="contact-card-v2">
         <div class="c2-icon">📄</div>
         <div>
           <div class="c2-label">Resume</div>
