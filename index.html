@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>SUSHIL SONI | Data Analyst</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Lexend:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
   :root {
     --bg: #050d1a;
@@ -22,7 +22,7 @@
     --card: rgba(9,22,40,0.85);
     --mono: 'Space Mono', monospace;
     --sans: 'DM Sans', sans-serif;
-    --display: 'Syne', sans-serif;
+    --display: 'Lexend', sans-serif;
   }
 
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1054,7 +1054,6 @@
   <ul class="nav-links">
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -1075,7 +1074,6 @@
     <div class="hero-btns">
       <a href="#projects" class="btn-primary">View Projects <span class="arrow">→</span></a>
       <a href="#contact" class="btn-primary">✉️ Contact Me</a>
-      <a href="https://drive.google.com/file/d/1P9pZy_7hhqnGkHkj2jNkTf6Cx8JSUH3G/view?usp=sharing" target="_blank" class="btn-primary">📄 Resume</a>
     </div>
     <div class="scroll-hint">
       <div class="scroll-line"></div>
@@ -1115,7 +1113,7 @@
         <div class="stat-label">Skills</div>
       </div>
       <div class="stat">
-        <div class="stat-num">9+</div>
+        <div class="stat-num">10+</div>
         <div class="stat-label">Projects</div>
       </div>
       <div class="stat">
@@ -1188,11 +1186,29 @@
     <button class="proj-tab active" onclick="filterProj(this,'all')">All</button>
     <button class="proj-tab" onclick="filterProj(this,'python')">🐍 Python</button>
     <button class="proj-tab" onclick="filterProj(this,'sql')">🗄️ SQL</button>
+    <button class="proj-tab" onclick="filterProj(this,'analysis')">📊 Data Analysis</button>
     <button class="proj-tab" onclick="filterProj(this,'powerbi')">📊 Power BI</button>
     <button class="proj-tab" onclick="filterProj(this,'excel')">📗 Excel</button>
   </div>
 
   <div class="projects-grid" id="projGrid">
+
+    <div class="proj-card" data-cat="analysis">
+      <div class="proj-meta"><span class="proj-num">DATA ANALYSIS · 001</span><span class="proj-type">🛒</span></div>
+      <div class="proj-title">Retail Analytics</div>
+      <div class="proj-desc"><ul>
+        <li>End-to-end analytics on Olist Brazilian E-Commerce Dataset — 9 relational tables.</li>
+        <li>Designed MySQL database, performed SQL analysis & Python EDA.</li>
+        <li>Insights: revenue trends, top sellers, customer patterns & delivery performance.</li>
+        <li>Visualizations using Matplotlib & Seaborn with full documentation.</li>
+      </ul></div>
+      <div class="proj-tags">
+        <span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span>
+      </div>
+      <div class="proj-links">
+        <a href="https://github.com/sushil-soni/Retail-Analytics" target="_blank" class="btn-demo">📊 View Project</a>
+      </div>
+    </div>
 
     <div class="proj-card" data-cat="python">
       <div class="proj-meta"><span class="proj-num">PYTHON · 001</span><span class="proj-type">🪔</span></div>
@@ -1314,26 +1330,10 @@
 
   </div>
 </section>
-<section id="experience">
-  <div class="section-label">03 — Work History</div>
-  <h2 class="section-title">Experience</h2>
-  <div class="exp-card">
-    <div class="exp-top">
-      <div class="exp-role">Data Analyst</div>
-      <div class="exp-period">JUNE 2024 – JULY 2026</div>
-    </div>
-    <div class="exp-company">📍 IITSCL · Indian Institute of Training for Software & Computing Lab · New Delhi</div>
-    <ul class="exp-bullets">
-      <li>Collected, cleaned, and analyzed large datasets using Excel, SQL, and Python (Pandas, NumPy) to extract actionable insights.</li>
-      <li>Designed and maintained Power BI dashboards, improving business data visibility and reporting efficiency by 40%.</li>
-      <li>Performed data validation and integrity checks across multiple sources, ensuring 98% reporting accuracy.</li>
-    </ul>
-  </div>
-</section>
 
 <!-- EDUCATION -->
 <section id="education">
-  <div class="section-label">04 — Academic Background</div>
+  <div class="section-label">03 — Academic Background</div>
   <h2 class="section-title">Education</h2>
   <div class="edu-card">
     <div class="edu-icon">🎓</div>
@@ -1347,7 +1347,7 @@
 
 <!-- CERTIFICATIONS -->
 <section id="certifications" style="background: var(--bg2);">
-  <div class="section-label">05 — Credentials</div>
+  <div class="section-label">04 — Credentials</div>
   <h2 class="section-title">Certifications &amp; <span style="color: #ffffff;">Courses</span></h2>
   <div class="cert-grid">
 
@@ -1422,7 +1422,7 @@
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="section-label">06 — Get In Touch</div>
+  <div class="section-label">05 — Get In Touch</div>
   <h2 class="section-title">Let's Connect</h2>
   <p class="contact-sub">
     I'm open to Data Analyst roles, freelance projects, and collaborations. Whether you have a project idea or just want to talk data — feel free to reach out!
@@ -1450,13 +1450,6 @@
         <div>
           <div class="c2-label">GitHub</div>
           <div class="c2-val">sushil-soni</div>
-        </div>
-      </a>
-      <a href="https://drive.google.com/file/d/1P9pZy_7hhqnGkHkj2jNkTf6Cx8JSUH3G/view?usp=sharing" target="_blank" class="contact-card-v2">
-        <div class="c2-icon">📄</div>
-        <div>
-          <div class="c2-label">Resume</div>
-          <div class="c2-val">Download / View Resume</div>
         </div>
       </a>
       <div class="contact-card-v2">
